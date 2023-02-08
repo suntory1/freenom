@@ -155,5 +155,7 @@ return [
         '100135' => '检测到 Data 目录没有写权限，无法记录版本号，为了避免重复推送升级消息，程序将忽略版本检查。请自行前往 https://github.com/luolongfei/freenom/releases 查看是否有新版本',
         '100136' => 'Pushplus',
         '100137' => 'Pushplus 消息发送失败：<red>%s</red>',
+        '100200' => '飞书',
+        '100201' => '飞书消息发送失败：<red>%s</red>',
     ],
 ];

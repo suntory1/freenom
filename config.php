@@ -98,6 +98,17 @@ return [
             'class' => \Luolongfei\Libs\MessageServices\Pushplus::class,
             'name' => lang('100136'),
         ],
+
+        /**
+         * 飞书
+         */
+        'lark' => [
+            'name' => lang('100200'),
+            'class' => \Luolongfei\Libs\MessageServices\Lark::class,
+            'enable' => (int)env('LARK_ENABLE'),
+            'lark_token' => (string)env('LARK_TOKEN'),
+            'lark_secret' => (string)env('LARK_SECRET'),
+        ],
     ],
     'custom_language' => env('CUSTOM_LANGUAGE', 'zh'),
     'notice_freq' => (int)env('NOTICE_FREQ', 1), // 通知频率 0：仅当有续期操作的时候 1：每次执行
